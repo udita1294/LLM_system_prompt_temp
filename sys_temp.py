@@ -13,16 +13,22 @@ client = Groq(api_key = my_api_key);
 
 model = "llama-3.3-70b-versatile"
 role = "user"
-prompt = "Write a poem about the beauty of nature."
+prompt = "Suggest me one names for a new food company."
+
+message_system = {
+    "role" : "system",
+    "content" : "You are a  brand manager who suggests names for a new food brand. The name should be in one word and catchy"
+}
 
 message = {
     "role" : role,
     "content" : prompt
 }
 
-messages = [message]
+messages = [message_system, message]
 
-response = client.chat.completions.create(model=model, messages=messages)
+#  temperature is used to control randomness in the model's response {0,1,2} max = 2
+response = client.chat.completions.create(model=model, messages=messages, temperature=1)
 print(response);
 
 print("##############################################################################")
