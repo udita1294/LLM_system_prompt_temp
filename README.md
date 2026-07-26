@@ -1,4 +1,4 @@
-#  System Prompts with Groq API
+#  System Prompts
 
 This repository contains my learning notes and code while exploring **Prompt Engineering** using the **Groq API** and **Llama 3.3 70B Versatile** model.
 
@@ -6,7 +6,7 @@ The objective of this exercise was to understand how **System Prompts** influenc
 
 ---
 
-## 🎯 Learning Objective
+## Learning Objective
 
 In this lesson, I learned how to:
 
@@ -18,7 +18,7 @@ In this lesson, I learned how to:
 
 ---
 
-## 🧠 Concepts Covered
+##  Concepts Covered
 
 ### System Prompt
 
@@ -74,7 +74,7 @@ temperature = 1
 
 ---
 
-## 📂 Folder Structure
+##  Folder Structure
 
 ```text
 day2/
@@ -87,7 +87,7 @@ day2/
 └── README.md
 ```
 
-## 📖 Key Takeaways
+##  Key Takeaways
 
 - Learned the purpose of **System Prompts**
 - Understood how chat messages are structured
